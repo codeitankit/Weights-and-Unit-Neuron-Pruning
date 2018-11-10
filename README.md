@@ -9,7 +9,7 @@ neurons of consecutive layers. Here, to achieve sparsity of k% we rank the indiv
 to their magnitude (absolute value) |w(i,j)|, and then set to zero the smallest k%.
 
 2. Unit/Neuron pruning: set entire columns in the weight matrix to zero, in effect deleting the corresponding output neuron.
-Here to achieve sparsity of k% we rank the the columns of a weight matrix according to their L2-norm & delete the smallest k%.
+Here to achieve sparsity of k% we rank the the columns of a weight matrix according to their L2-norm & delete the neurons with  smallest k% norms.
 
 Naturally, as we increase the sparsity and delete more of the network, the task performance will progressively degrade.
 
