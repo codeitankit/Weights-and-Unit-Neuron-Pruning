@@ -49,3 +49,5 @@ ii) The smaller network is forst retrained and then the accuracy and execution a
 The test execution time decreases by a factor of 6-7 while the accuracy over the test same remains the same.
 
 Thus, we conclude that a neural network has a very large number of excess neurons which can be deleted once the network has been trained. After deleting these excess neurons, we retrain the smaller network and in this way, the test time execution speed can be increases substantially.
+
+These codes have been run on MacBook Pro (13-inch, 2017) with 2.3 GHz Intel Core i5 processor.
