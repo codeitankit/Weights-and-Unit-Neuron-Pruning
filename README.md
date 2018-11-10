@@ -42,7 +42,9 @@ All those neurons which were rendered passive (by making their corresponding wei
 now deleted, thus decreasing the size of each hidden layer(except the last layer). This gives a neural network which has lesser number of neurons than the original network.
 
 The test execution time is calculated in 2 ways:
+
 i) The smaller network is used to calculate accuracy on the test set and execution time is noted. Here, the network suffers decrease in accuracy as k% neurons in each hidden layer(ewxcept the last hidden layer) have been deleted.
+
 ii) The smaller network is forst retrained and then the accuracy and execution and test time accuracy are noted. Here, the network recovers the accuracy while maintaining the same execution time as in part (i).
 The test execution time decreases by a factor of 6-7 while the accuracy over the test same remains the same.
 
