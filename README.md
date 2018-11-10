@@ -6,7 +6,7 @@ neural network layer, pruning can be performed in 2 ways:
 
 1. Weight pruning: set individual weights in the weight matrix to zero. This corresponds to deleting connections between the
 neurons of consecutive layers. Here, to achieve sparsity of k% we rank the individual weights in weight matrix W according
-to their magnitude (absolute value) |wi,j|, and then set to zero the smallest k%.
+to their magnitude (absolute value) |w(i,j)|, and then set to zero the smallest k%.
 
 2. Unit/Neuron pruning: set entire columns in the weight matrix to zero, in effect deleting the corresponding output neuron.
 Here to achieve sparsity of k% we rank the the columns of a weight matrix according to their L2-norm & delete the smallest k%.
@@ -15,7 +15,6 @@ Naturally, as we increase the sparsity and delete more of the network, the task 
 
 In this project, I plotted the accuracy vs sparsity plots for both weight pruning and neuron pruning.
 
-The various files in the project should be run in the following order:
+To run the files and reproduce the results, run clone and download the reposirory. Keep all the files in the same folder. Each
+jupyter file is a standlone file and does not depend on other files, so you can run the 4 Jupyter files in any order.
 
-1. NN Weight and Neuron Pruning.ipynb
-In this file, the neural network 
